@@ -7,9 +7,9 @@ if [ -t 1 ] && [ -e ~/.command/config.sh ]; then
 	{ set -x;  . ~/.command/config.sh; { set +x; } 2>/dev/null; }
 fi
 
-sh_files="$(find . -type f -name "test_*.sh")"
-[[ -z $sh_files ]] && exit
+{ set -x;  cd "${BASH_SOURCE[0]%/*/*}"; { set +x; } 2>/dev/null; }
+find="$(find . -type f -name "test_*.sh" -o -name "test.sh" -o -name "tests.sh")"
+[[ -z $find ]] && exit
 while IFS= read sh; do
-	( set -x; . "$sh" ) || exit $?
-	echo
-done <<< "$sh_files";:
+	( set -x; . "$sh" ) && echo || exit
+done <<< "$find";:
