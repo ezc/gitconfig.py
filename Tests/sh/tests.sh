@@ -1,1 +1,0 @@
-/Users/russianidiot/.ln/python/Tests/tests_dotfiles.sh
