@@ -13,5 +13,8 @@ tty -s && [ -e ~/.command.sh ] && {
 sp="$(python -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")"
 ! [ -e "$sp" ] && echo "ERROR: $sp NOT EXISTS" && exit 1
 [ -L "$sp" ] && sp="$(cd "${sp%/*}" && cd `readlink "${sp##*/}"` && echo $PWD)"
-set python ./setup.py install; ! [ -w "$sp" ] && set sudo "$@"
+# python setup.py install_lib:
+#   site-packages/modname.py
+#   site-packages/pkgname/
+set python ./setup.py install_lib --force; ! [ -w "$sp" ] && set sudo "$@"
 ( set -x; "$@" ) && { ! [ -w "$sp" ] && ( set -x; chmod -R 777 . ); };:
