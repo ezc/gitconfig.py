@@ -2,4 +2,3 @@ conf
 fullpath
 git
 public
-setup
