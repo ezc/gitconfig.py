@@ -1,5 +1,4 @@
+GitPython
 conf
 fullpath
-git
 public
-setuptools
