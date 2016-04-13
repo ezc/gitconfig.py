@@ -4,7 +4,7 @@ import git
 GitConfigParser=git.config.GitConfigParser
 from conf import *
 from fullpath import *
-from public import *
+from public import public
 
 @public
 class Gitconfig(Conf):
