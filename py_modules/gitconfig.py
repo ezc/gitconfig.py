@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 git=__import__("git") # GitPython dist
-import git
 GitConfigParser=git.config.GitConfigParser
 from conf import *
-from fullpath import *
+from fullpath import fullpath
 from public import public
 
 @public
@@ -21,9 +20,3 @@ class Gitconfig(Conf):
 
 gitconfig = Gitconfig("~/.gitconfig",True)
 public(gitconfig)
-
-if __name__=="__main__":
-    print(gitconfig)
-    print("section: %s" % gitconfig.sections)
-    print("gitconfig.init.templatedir: %s" % gitconfig.init.templatedir)
-    print("not_existing: %s" % gitconfig.not_existing)
