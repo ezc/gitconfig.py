@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-git=__import__("git") # GitPython dist
-GitConfigParser=git.config.GitConfigParser
+import git
 from conf import *
 from fullpath import fullpath
 from public import public
+
+GitConfigParser=git.config.GitConfigParser
 
 @public
 class Gitconfig(Conf):
