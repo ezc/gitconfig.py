@@ -10,6 +10,10 @@
 }
 { set -x; . "${BASH_SOURCE[0]%/*}"/export.sh; { set +x; } 2>/dev/null; }
 
+! [ -w /usr/local/bin ] && {
+	( set -x; sudo chmod -R 777 /usr/local/bin ) || exit
+}
+
 # 1) .Tests/requirements.txt, requirements.txt
 for txt in .Tests/requirements.txt requirements.txt; do
 	[ -f "$txt" ] && [ -s "$txt" ] && {

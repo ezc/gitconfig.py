@@ -4,6 +4,7 @@
 [![Code Health](https://scrutinizer-ci.com/g/russianidiot/gitconfig.py/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/russianidiot/gitconfig.py)
 
 [![Build Status](https://travis-ci.org/russianidiot/gitconfig.py.svg?branch=master)](https://travis-ci.org/russianidiot/gitconfig.py)[![drone.io](https://drone.io/github.com/russianidiot/gitconfig.py/status.png)](https://drone.io/github.com/russianidiot/gitconfig.py)[![Wercker](https://img.shields.io/wercker/ci/russianidiot/gitconfig.py.svg)](https://app.wercker.com/#applications/None/)
+[![codecov.io](https://codecov.io/github/russianidiot/gitconfig.py/coverage.svg?branch=master)](https://codecov.io/github/russianidiot/gitconfig.py?branch=master)
 
 [![PyPI](https://img.shields.io/pypi/v/gitconfig.svg)](https://pypi.python.org/pypi/gitconfig)
 [![PyPI](https://img.shields.io/pypi/dm/gitconfig.svg)](https://pypi.python.org/pypi/gitconfig)
