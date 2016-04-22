@@ -1,6 +1,9 @@
+#!/usr/bin/env python
+import sys
 
-if __name__=="__main__":
-    print(gitconfig)
+if "3.2." not in sys.version:
+    from gitconfig import gitconfig
+    
     print("section: %s" % gitconfig.sections)
     print("gitconfig.init.templatedir: %s" % gitconfig.init.templatedir)
     print("not_existing: %s" % gitconfig.not_existing)
