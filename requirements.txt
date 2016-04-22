@@ -1,3 +1,4 @@
 GitPython
-isstring
+conf
+fullpath
 public
