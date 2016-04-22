@@ -1,23 +1,28 @@
 #!/usr/bin/env python
-import git
-from conf import *
-from fullpath import fullpath
-from public import public
+import sys
 
-GitConfigParser=git.config.GitConfigParser
+if "3.2." in sys.version:
+    print("SKIP: python3.2 not supported")
+else:
+    import git
+    from conf import *
+    from fullpath import fullpath
+    from public import public
 
-@public
-class Gitconfig(Conf):
-    read_only = False
+    GitConfigParser=git.config.GitConfigParser
 
-    def __init__(self,path,read_only=False):
-        self.read_only = read_only
-        path = fullpath(path)
-        parser = GitConfigParser(path,read_only=self.read_only)
-        Conf.__init__(self,path=path,parser=parser)
+    @public
+    class Gitconfig(Conf):
+        read_only = False
 
-    def write(self):
-        self.parser.write()
+        def __init__(self,path,read_only=False):
+            self.read_only = read_only
+            path = fullpath(path)
+            parser = GitConfigParser(path,read_only=self.read_only)
+            Conf.__init__(self,path=path,parser=parser)
 
-gitconfig = Gitconfig("~/.gitconfig",True)
-public(gitconfig)
+        def write(self):
+            self.parser.write()
+
+    gitconfig = Gitconfig("~/.gitconfig",True)
+    public(gitconfig)
