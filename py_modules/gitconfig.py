@@ -26,3 +26,8 @@ else:
 
     gitconfig = Gitconfig("~/.gitconfig",True)
     public(gitconfig)
+
+config=Gitconfig("/Users/russianidiot/git/russianidiot/gitconfig.py/.git/config")
+print(config)
+
+
