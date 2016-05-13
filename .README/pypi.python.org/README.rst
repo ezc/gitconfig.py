@@ -28,7 +28,6 @@ Install
 
 Usage
 `````
-
 .. code-block::
 
 	from gitconfig import *
