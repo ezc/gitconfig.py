@@ -5,5 +5,5 @@ from gitconfig import gitconfig
 
 print("section: %s" % gitconfig.sections)
 if gitconfig and gitconfig.init:
-	print("gitconfig.init.templatedir: %s" % gitconfig.init.templatedir)
-	print("not_existing: %s" % gitconfig.not_existing)
+    print("gitconfig.init.templatedir: %s" % gitconfig.init.templatedir)
+    print("not_existing: %s" % gitconfig.not_existing)
