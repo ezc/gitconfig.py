@@ -6,19 +6,19 @@
 |codacy| |landscape| |codeclimate| |scrutinizer|
 
 .. |scrutinizer| image:: https://scrutinizer-ci.com/g/russianidiot/gitconfig.py/badges/quality-score.png?b=master
-   :target: https://scrutinizer-ci.com/g/russianidiot/gitconfig.py/master
+   :target: https://scrutinizer-ci.com/g/russianidiot/gitconfig.py/
    :alt: scrutinizer-ci.com
 
-.. |codacy| image:: https://img.shields.io/codacy/49fed644fc554455896509e21bce35a2.svg
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/49fed644fc554455896509e21bce35a2
    :target: https://www.codacy.com/app/russianidiot-github/gitconfig-py/dashboard
    :alt: codacy.com
 
-.. |codeclimate| image:: https://img.shields.io/codeclimate/github/russianidiot/gitconfig.py.svg
+.. |codeclimate| image:: https://codeclimate.com/github/russianidiot/gitconfig.py/badges/gpa.svg
    :target: https://codeclimate.com/github/russianidiot/gitconfig.py
    :alt: codeclimate.com
 
 .. |landscape| image:: https://landscape.io/github/russianidiot/gitconfig.py/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/russianidiot/gitconfig.py/master
+   :target: https://landscape.io/github/russianidiot/gitconfig.py/master/landscape.svg?style=flat
    :alt: landscape.io
 
 Install
@@ -28,6 +28,7 @@ Install
 
 Usage
 `````
+
 .. code-block::
 
 	from gitconfig import *

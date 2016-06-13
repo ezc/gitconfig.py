@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from gitconfig import Gitconfig
+from gitconfig import GitConfig
 
-gitconfig = Gitconfig("~/.gitconfig", True)
+gitconfig = GitConfig("~/.gitconfig", True)
 print(gitconfig)
