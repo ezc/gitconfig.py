@@ -1,6 +1,5 @@
 GitPython
 conf
 fullpath
-gitconfig
 gitconfigparser
 public
