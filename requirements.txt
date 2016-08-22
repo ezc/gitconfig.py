@@ -3,3 +3,4 @@ conf
 fullpath
 gitconfigparser
 public
+setupfiles

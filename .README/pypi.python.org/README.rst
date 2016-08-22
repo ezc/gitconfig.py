@@ -32,13 +32,3 @@ Feedback |github_issues| |gitter| |github_follow|
 
 .. |gitter| image:: https://badges.gitter.im/russianidiot/gitconfig.py.svg
 	:target: https://gitter.im/russianidiot/gitconfig.py
-
-----
-
-`russianidiot.github.io/python/`_  - Python packages
-
-.. _russianidiot.github.io/python/: http://russianidiot.github.io/python/
-
-`russianidiot.github.io/cli/`_  - command line scripts
-
-.. _russianidiot.github.io/cli/: http://russianidiot.github.io/cli/
